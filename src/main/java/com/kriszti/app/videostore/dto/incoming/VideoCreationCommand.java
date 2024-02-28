@@ -8,13 +8,16 @@ public class VideoCreationCommand {
 
     private Integer year;
 
+    private String pictureUrl;
+
     public VideoCreationCommand() {
     }
 
-    public VideoCreationCommand(String title, String director, Integer year) {
+    public VideoCreationCommand(String title, String director, Integer year, String pictureUrl) {
         this.title = title;
         this.director = director;
         this.year = year;
+        this.pictureUrl = pictureUrl;
     }
 
     public String getTitle() {
@@ -39,5 +42,13 @@ public class VideoCreationCommand {
 
     public void setYear(Integer year) {
         this.year = year;
+    }
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
     }
 }

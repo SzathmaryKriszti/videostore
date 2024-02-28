@@ -26,6 +26,9 @@ public class Video {
     @Column(name = "rented_out")
     private Boolean flag;
 
+    @Column(name = "picture_url")
+    private String pictureUrl;
+
     @OneToMany( mappedBy = "rating")
     private List<Rating> ratings;
 
@@ -37,6 +40,7 @@ public class Video {
         this.director = command.getDirector();
         this.year = command.getYear();
         this.flag = false;
+        this.pictureUrl = command.getPictureUrl();
         this.ratings = new ArrayList<>();
     }
 
