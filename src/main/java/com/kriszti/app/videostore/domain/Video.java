@@ -91,4 +91,12 @@ public class Video {
     public void setRatings(List<Rating> ratings) {
         this.ratings = ratings;
     }
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
+    }
 }
